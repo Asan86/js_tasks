@@ -22,6 +22,6 @@ console.log(hour + ":" + minute + ":" + second);
     Количество строк кода при этом не должно измениться. */
 
 var num = 10;
-num = num++;
-num = num++;
+num++;
+num++;
 alert(num);
