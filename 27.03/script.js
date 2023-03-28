@@ -10,15 +10,12 @@ cube(num);
 /* 2) Напишите функцию getName(), которая при вызове будет принимать переменную 
    name (например, «Василий») и выводить строку (в нашем случае «Привет, Василий»). 
    В случае отсутствующего параметра выводить «Привет, гость» */
-let str = prompt("Напишите свое имя: ");
-function getName(str) {
-  if (str) {
-    alert("Привет " + str);
-  } else {
-    alert("Привет гость!");
-  }
+
+function getName(userName = " гость!") {
+  document.write(`Привет,   ${userName}`);
 }
-getName(str);
+let userName = "Asan";
+getName(userName);
 
 /* 3) Напишите функцию, которая вычисляет итоговую оценку студента в зависимости от двух параметров: 
 оценки за экзамен и количества выполненных проектов. 
@@ -41,13 +38,23 @@ getName(str);
 function finalGrade(exampl, projects) {
   if (exampl > 90 || projects > 10) {
     return 100;
-  } else if ((exampl > 75) & (projects >= 5)) {
+  } else if (exampl > 75 && projects >= 5) {
     return 90;
-  } else if ((exampl > 50) & (projects >= 2)) {
+  } else if (exampl > 50 && projects >= 2) {
     return 75;
-  } else if ((exampl > 30) & (projects >= 1)) {
+  } else if (exampl > 30 && projects >= 1) {
     return 50;
   } else {
     return 0;
   }
 }
+let fun1 = finalGrade(95, 15);
+console.log(fun1);
+let fun2 = finalGrade(85, 10);
+console.log(fun2);
+let fun3 = finalGrade(55, 5);
+console.log(fun3);
+let fun4 = finalGrade(35, 3);
+console.log(fun4);
+let fun5 = finalGrade(1, 1);
+console.log(fun5);
