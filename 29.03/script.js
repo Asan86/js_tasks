@@ -18,8 +18,8 @@
 
 /* 3) Заполните массив 10-ю иксами с помощью цикла. [x,x...] */
 let count = [];
-for(let i = 0; i < 10; i++ ){
-    count[i] = 'x';
+for (let i = 0; i < 10; i++) {
+  count.push("x");
 }
 console.log(count);
 
@@ -27,10 +27,10 @@ console.log(count);
 С помощью цикла for и оператора if нужно проверить есть ли в массиве число
 со значением, равным = 4. Если есть - надо вывести окошко с сообщением = 'ЕСТЬ!!!' */
 
-let myArray = [1, 2, 115, 4, 58, 5 ,7 ,99];
+let myArray = [1, 2, 115, 4, 58, 5, 7, 99];
 
-for(let i = 0; i < myArray.length; i++){
-    if(myArray[i] == 4){
-        console.log("ЕСТЬ!");
-    }
+for (let i = 0; i < myArray.length; i++) {
+  if (myArray[i] == 4) {
+    console.log("ЕСТЬ!");
+  }
 }
