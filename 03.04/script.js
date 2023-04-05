@@ -8,7 +8,7 @@ function myArray(length, value) {
   }
   return newArray;
 }
-console.log(myArray(3, "a"));
+console.log(myArray(3, "    "));
 
 /* 2) Напишите функцию, которая разворачивает массив в обратном порядке и затем ее возвращает.
    Функция наша принимает массив любых элементов. 
