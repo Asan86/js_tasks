@@ -1,29 +1,28 @@
 /* *********************** Получение через цикл (for of) ************************* */
-const form1 = document.getElementById('my-form');
+const form = document.getElementById('my-form');
 const getFormValues1 = (event)=>{
     event.preventDefault();
-    const values1 = {};
-    for(let fild of form1){
-        if(fild.name){
-            values1[fild.name] = fild.value;
+    const values = {};
+    for(let field of form){
+        if(field.name){
+            values[field.name] = field.value;
         }
     }
-    console.log(values1);
+    console.log(values);
 }
-form1.addEventListener('submit', getFormValues1);
+form.addEventListener('submit', getFormValues1);
 
 /* *******************Мотод №3 получаем по ключу********************* */
-const form2 = document.getElementById("my-form");
-const getFormValues2 = (e) => {
-  e.preventDefault();
-  const { lname, fname, email, date, adress } = form2;
-  const values2 = {
+const getFormValues2 = (event) => {
+  event.preventDefault();
+  const { lname, fname, email, date, adress } = form;
+  const values = {
     lname: lname.value,
     fname: fname.value,
     email: email.value,
     date: date.value,
     adress: adress.value,
   };
-  console.log(values2);
+  console.log(values);
 };
-form2.addEventListener("submit", getFormValues2);
+form.addEventListener("submit", getFormValues2);
