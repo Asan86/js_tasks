@@ -11,68 +11,70 @@
     <div class="container d-flex justify-content-center p-5">
       <div class="card" style="width: 600px">
         <div class="card-body">
-          <form id="my-form">
-            <h2>Форма информации</h2>
-            <div class="mb-3">
-              <label for="lname" class="form-label">Имя</label>
+          <form action="" class="needs-validation" novalidate>
+            <div class="form group">
+              <label for="fname">Имя</label>
               <input
                 type="text"
-                class="form-control is-valid"
-                id="lname"
-                name="lname"
-                value="Asan"
-                required
-              />
-              <div class="valid-feedback">Looks good!</div>
-            </div>
-            <div class="mb-3">
-              <label for="fname" class="form-label">Фамилия</label>
-              <input
-                type="text"
-                class="form-control is-valid"
+                name=""
                 id="fname"
-                name="fname"
-                value="Turdukulov"
+                class="form-control"
                 required
               />
-              <div class="valid-feedback">Looks good!</div>
+              <div class="valid-feedback">Выглядит неплохо!</div>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">email</label>
+            <div class="form group">
+              <label for="lname">Фамилия</label>
+              <input
+                type="text"
+                name=""
+                id="lname"
+                class="form-control"
+                required
+              />
+              <div class="valid-feedback">Выглядит неплохо!</div>
+            </div>
+            <div class="form group">
+              <label for="email">Email</label>
               <input
                 type="email"
-                class="form-control is-valid"
+                name=""
                 id="email"
-                name="email"
-                value="asanturdukulov86@gmail.com"
+                class="form-control"
                 required
               />
-              <div class="valid-feedback">Looks good!</div>
+              <div class="valid-feedback">Выглядит неплохо!</div>
             </div>
-            <div class="mb-3">
-              <label for="date" class="form-label">Дата рождения</label>
+            <div class="form group">
+              <label for="date">Дата рождения</label>
               <input
                 type="date"
-                class="form-control is-valid"
+                name=""
                 id="date"
-                name="date"
-                value="1986-05-16"
+                class="form-control"
                 required
               />
+              <div class="valid-feedback">Выглядит неплохо!</div>
             </div>
-            <div class="mb-3">
-              <label for="adress" class="form-label">Адрес проживания</label>
+            <div class="form group">
+              <label for="address">Адрес проживания</label>
               <input
-                type="text"
-                class="form-control is-valid"
-                id="adress"
-                name="adress"
-                value="г. Бишкек"
+                type="address"
+                name=""
+                id="address"
+                class="form-control"
                 required
               />
+              <div class="valid-feedback">Выглядит неплохо!</div>
             </div>
             <div class="col-12">
-              <button class="btn btn-primary" type="submit">Войти</button>
+              <input
+                type="submit"
+                value="Найти"
+                class="btn btn-primary"
+                name=""
+                id=""
+              />
             </div>
           </form>
         </div>
