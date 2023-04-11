@@ -13,16 +13,16 @@ const getFormValues1 = (event)=>{
 form.addEventListener('submit', getFormValues1);
 
 /* *******************Мотод №3 получаем по ключу********************* */
-const getFormValues2 = (event) => {
-  event.preventDefault();
-  const { lname, fname, email, date, adress } = form;
-  const values = {
-    lname: lname.value,
-    fname: fname.value,
-    email: email.value,
-    date: date.value,
-    adress: adress.value,
-  };
-  console.log(values);
-};
-form.addEventListener("submit", getFormValues2);
+// const getFormValues2 = (event) => {
+//   event.preventDefault();
+//   const { lname, fname, email, date, adress } = form;
+//   const values = {
+//     lname: lname.value,
+//     fname: fname.value,
+//     email: email.value,
+//     date: date.value,
+//     adress: adress.value,
+//   };
+//   console.log(values);
+// };
+// form.addEventListener("submit", getFormValues2);
