@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="form" id="my-form">
+      <div class="container">
+        <h2>Анкета для корпоративных клиентов</h2>
+        <h3>Личные данные</h3>
+        <div class="inputGroup">
+          <label for="lastName" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            name="lastName"
+            id="lastName"
+            placeholder="Фамилия"
+          />
+          <label for="name" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            id="name"
+            placeholder="Имя"
+          />
+          <label for="surName" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            name="surName"
+            id="surName"
+            placeholder="Отчество"
+          />
+        </div>
+        <h3>Паспортные данные</h3>
+        <div class="inputGroup">
+          <label for="dateOfBirth" class="form-label"></label>
+          <input
+            type="date"
+            class="form-control"
+            name="dateOfBirth"
+            id="dateOfBirth"
+            placeholder="Дата рождения"
+          />
+          <label for="residentialResidence" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control2"
+            name="residentialResidence"
+            id="residentialResidence"
+            placeholder="Место проживания по прописке"
+          />
+        </div>
+        <div class="inputGroup">
+          <label for="serialNumber" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            name="serialNumber"
+            id="serialNumber"
+            placeholder="Серийный номер AN/ID"
+          />
+          <label for="inn" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            name="inn"
+            id="inn"
+            placeholder="ИНН"
+          />
+          <label for="dateGet" class="form-label"></label>
+          <input
+            type="date"
+            class="form-control"
+            name="dateGet"
+            id="dateGet" 
+          />
+        </div>
+        <div class="inputGroup">
+          <label for="contakt_number" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            name="contakt_number"
+            id="contakt_number"
+            placeholder="Контактный номер"
+          />
+          <label for="email" class="form-label"></label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="email"
+            placeholder="Электронный адрес"
+          />
+          <label for="bankName" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            name="bankName"
+            id="bankName"
+            placeholder="Наименование банка"
+          />
+        </div>
+        <label for="placeOfResidence" class="form-label"></label>
+        <input
+          type="text"
+          class="form-control3"
+          name="placeOfResidence"
+          id="placeOfResidence"
+          placeholder="Фактическое место проживания"
+        />
+        <div class="div_btn">
+          <input
+            type="submit"
+            class="form-control_btn"
+            name="btn"
+            id="btn"
+            value="Далее"
+          />
+        </div>
+      </div>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
