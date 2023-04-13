@@ -12,5 +12,4 @@ fields.forEach(field => {
 })
 console.log(values);
 }
-
 form.addEventListener("submit", getFormValue);
