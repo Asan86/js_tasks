@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center p-5">
+      <div class="card" style="width: 600px">
+        <div class="card-body">
+          <form id="my-form">
+            <h2>Форма входа</h2>
+            <div class="mb-3">
+              <label for="lname" class="form-label">Имя</label>
+              <input
+                type="text"
+                class="form-control"
+                name="lname"
+                id="lname"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="fname" class="form-label">Пароль</label>
+              <input
+                type="fname"
+                class="form-control"
+                name="fname"
+                id="fname"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="msg" class="form-label">Сообщение</label>
+              <textarea
+                class="form-control"
+                name="msg"
+                id="msg"
+                rows="5"
+                cols="10"
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <select name="leng" id="leng" class="form-select">
+                <option value="0">select language</option>
+                <option value="js">Java Script</option>
+                <option value="Java">Java</option>
+                <option value="Pyton">Pyton</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="fname" class="form-label">Филиал</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="1"
+                  id="check1"
+                  name="address"
+                  checked
+                />
+                <label class="form-check-label" for="check1">
+                  г. Бишкек Суюмбаева 123
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="2"
+                  id="check2"
+                  name="address"
+                />
+                <label class="form-check-label" for="check2">
+                  г. Бишкек Турусбекова 109
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Войти</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
