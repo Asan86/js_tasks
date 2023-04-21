@@ -51,25 +51,24 @@ const setUserData = (event) => {
   });
 };
 
-const updataUser = async(user) => {
+const updataUser = async (user) => {
   const id = user.id;
-  delete user.id; 
-  location.reload();
+  delete user.id;
 
   const options = {
     method: "PUT",
     headers: {
-      "Content-type":"application/json"
+      "Content-type": "application/json",
     },
-    body:JSON.stringify(user)
-  }
-  const updataUrl = url + '/' + id;
+    body: JSON.stringify(user),
+  };
+  const updataUrl = url + "/" + id;
 
   const response = await fetch(updataUrl, options);
-  if(response.ok){
-    alert('Редактирование успешно выполнено')
-  }else{
-    "Ошибка попробуйте еще раз!"
+  if (response.ok) {
+    alert("Редактирование успешно выполнено");
+  } else {
+    ("Ошибка попробуйте еще раз!");
   }
 };
 
@@ -78,6 +77,7 @@ const getUserValues = () => {
   const values = {};
   for (let elem of elems) {
     values[elem.name] = elem.value;
+    location.reload();
   }
   updataUser(values);
 };
